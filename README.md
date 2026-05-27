@@ -40,13 +40,13 @@ Then run all cells top to bottom. Data is pulled live from Yahoo Finance and the
 
 ## Results
 
-![Strategy vs SPY](strategy_returns.png)
+![Strategy vs SPY](graphs/strategy_returns.png)
 
 The strategy outperformed SPY from 2019 through most of 2022, peaking at ~100% cumulative return while SPY was around 50–55%. However SPY caught up and pulled ahead from 2024 onward, ending around 140% vs the strategy's ~100%. The strategy shows higher volatility overall — bigger drawdowns (notably COVID March 2020 and the 2022 bear market) but also stronger early recoveries. This is consistent with a momentum-tilted portfolio: it rides winners hard but gets hit harder when the market reverses.
 
 ## Clustering Visualization
 
-![KMeans Clusters July 2019](clustering_example.png)
+![KMeans Clusters July 2019](graphs/clustering_example.png)
 
 Each point is a stock. The x-axis represents the dominant feature direction after dimensionality reduction, and the y-axis is RSI. The 4 clusters are clearly separated by RSI level — **cluster 3 (black)** sits at the top with the highest RSI (~60–70), which is the cluster the strategy selects each month. Stocks in this cluster are exhibiting the strongest recent momentum, which is the signal the strategy bets on for the coming month.
 
